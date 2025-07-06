@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>LuksApp Admin Paneli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: sans-serif; background: #0f172a; color: white; padding: 20px; }
+    .container { max-width: 700px; margin: auto; }
+    input, textarea { width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 8px; border: none; }
+    button { padding: 10px 16px; border: none; border-radius: 8px; background: #22c55e; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🛠 Admin Panel - LuksApp</h1>
+    <label>Sürüm:</label>
+    <input id="version" type="text" placeholder="1.2">
+    
+    <label>Güncelleme Notları (her satır bir madde):</label>
+    <textarea id="changelog" rows="6"></textarea>
+
+    <label>APK İndirme Linki:</label>
+    <input id="apk" type="text" placeholder="https://...">
+
+    <button onclick="downloadJSON()">JSON'u İndir</button>
+  </div>
+
+  <script>
+    function downloadJSON() {
+      const version = document.getElementById('version').value.trim();
+      const changelog = document.getElementById('changelog').value.trim().split('\n').filter(Boolean);
+      const apk = document.getElementById('apk').value.trim();
+
+      const data = { version, changelog, apk };
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'data.json';
+      a.click();
+    }
+  </script>
+</body>
+</html>
