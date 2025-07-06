@@ -16,7 +16,16 @@
 <body>
   <div class="container">
     <h1>📱 LuksApp - Son Güncellemeler</h1>
-      <section class="card">
+     
+
+    <div class="card">
+      <p class="version" id="version">Yükleniyor...</p>
+      <ul id="changelog"></ul>
+    </div>
+    <a id="apkLink" href="#" class="button">📥 Uygulamayı İndir</a><br><br>
+  
+  </div>
+ <section class="card">
     <h2>📋 Uygulama Özellikleri</h2>
     <ul>
       <li>🔢 2048 Oyunu</li>
@@ -36,15 +45,6 @@
     <p>Uygulama ile ilgili öneri veya hata bildirimi yapmak istersen benimle iletişime geçebilirsin.</p>
     <a href="mailto:tprkcreator@gmail.com" class="button">📧 Mail Gönder</a>
   </section>
-
-    <div class="card">
-      <p class="version" id="version">Yükleniyor...</p>
-      <ul id="changelog"></ul>
-    </div>
-    <a id="apkLink" href="#" class="button">📥 Uygulamayı İndir</a><br><br>
-    <a href="admin.html" class="button">🔒 Admin Paneline Git</a>
-  </div>
-
   <script>
     fetch('data.json')
       .then(res => res.json())
