@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>LuksApp - Güncellemeler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: sans-serif; background: #0f172a; color: white; padding: 20px; }
+    .container { max-width: 700px; margin: auto; }
+    .card { background: #1e293b; padding: 20px; border-radius: 12px; margin-bottom: 20px; }
+    .button { background: #38bdf8; color: black; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .button:hover { background: #0ea5e9; }
+    .version { color: #a3e635; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📱 LuksApp - Son Güncellemeler</h1>
+    <div class="card">
+      <p class="version" id="version">Yükleniyor...</p>
+      <ul id="changelog"></ul>
+    </div>
+    <a id="apkLink" href="#" class="button">📥 Uygulamayı İndir</a><br><br>
+    <a href="admin.html" class="button">🔒 Admin Paneline Git</a>
+  </div>
+
+  <script>
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('version').innerText = `Sürüm ${data.version} - Yayında 🎉`;
+        const list = document.getElementById('changelog');
+        data.changelog.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          list.appendChild(li);
+        });
+        document.getElementById('apkLink').href = data.apk;
+      })
+      .catch(() => {
+        document.getElementById('version').innerText = 'Veri alınamadı';
+      });
+  </script>
+</body>
+</html>
