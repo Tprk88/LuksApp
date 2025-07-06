@@ -14,54 +14,66 @@
   </style>
 </head>
 <body>
- 
-</section>
 
   <div class="container">
     <h1>📱 LuksApp - Son Güncellemeler</h1>
-
 
     <div class="card">
       <p class="version" id="version">Yükleniyor...</p>
       <ul id="changelog"></ul>
     </div>
+
     <a id="apkLink" href="#" class="button">📥 Uygulamayı İndir</a><br><br>
-  <a href="/politikalar.html" style="text-decoration: none;">
-  <button style="padding: 10px 20px; font-size: 16px; background-color: #1e88e5; color: white; border: none; border-radius: 8px; cursor: pointer;">
-    Şartlar ve Politikalar
-  </button>
-</a>
 
+    <a href="/politikalar.html" style="text-decoration: none;">
+      <button style="padding: 10px 20px; font-size: 16px; background-color: #1e88e5; color: white; border: none; border-radius: 8px; cursor: pointer;">
+        Şartlar ve Politikalar
+      </button>
+    </a>
+
+    <section class="card">
+      <h2>📋 Uygulama Özellikleri</h2>
+      <ul>
+        <li>🔢 2048 Oyunu</li>
+        <li>❌⭕ TicTacToe (XOX)</li>
+        <li>🐍 Snake</li>
+        <li>🎮 Yeni mini oyunlar yakında!</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📱 Teknik Bilgiler</h2>
+      <ul>
+        <li>Boyut: 12.4 MB</li>
+        <li>Min. Android Sürümü: 7.0 (API 24)</li>
+        <li>Bazı Özellikler İçin İnternet Gerekir</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>❓ Sıkça Sorulan Sorular</h2>
+      <p><strong>Uygulama ne işe yarıyor?</strong><br>Mini oyunlar oynayabilir, eğlenebilirsin. Offline çalışır.</p>
+      <p><strong>APK nasıl yüklenir?</strong><br>İndirdikten sonra telefon ayarlarından "Bilinmeyen kaynaklara izin ver" seçmen gerekir.</p>
+      <p><strong>Yeni oyunlar eklenecek mi?</strong><br>Evet, yakında güncellemelerle yeni içerikler gelecek!</p>
+    </section>
+
+    <section class="card">
+      <h2>🗣 Kullanıcı Yorumları</h2>
+      <p><strong>Toprak E..</strong>: "2048 oyunu süper çalışıyor!"</p>
+      <p><strong>Özgür K.</strong>: "Tasarım sade, uygulama hafif. Eline sağlık!"</p>
+    </section>
+
+    <section class="card">
+      <h2>📩 Geri Bildirim</h2>
+      <p>Uygulama ile ilgili öneri veya hata bildirimi yapmak istersen benimle iletişime geçebilirsin.</p>
+      <a href="mailto:tprkcreator@gmail.com" class="button">📧 Mail Gönder</a>
+    </section>
+
+    <footer style="margin-top:40px; text-align:center;">
+      <a href="admin.html" style="color:#555; font-size:12px;">Admin</a>
+    </footer>
   </div>
- <section class="card">
-    <h2>📋 Uygulama Özellikleri</h2>
-    <ul>
-      <li>🔢 2048 Oyunu</li>
-      <li>❌⭕ TicTacToe (XOX)</li>
-      <li>🐍 Snake</li>
-      <li>🎮 Yeni mini oyunlar yakında!</li>
-    </ul>
-  </section>
-  <section class="card">
-  <h2>📱 Teknik Bilgiler</h2>
-  <ul>
-    <li>Boyut: 12.4 MB</li>
-    <li>Min. Android Sürümü: 7.0 (API 24)</li>
-    <li>Bazı Özellikler İçin İnternet Gerekir</li>
-  </ul>
-</section>
 
-  <section class="card">
-    <h2>❓ Sıkça Sorulan Sorular</h2>
-    <p><strong>Uygulama ne işe yarıyor?</strong><br>Mini oyunlar oynayabilir, eğlenebilirsin. Offline çalışır.</p>
-    <p><strong>APK nasıl yüklenir?</strong><br>İndirdikten sonra telefon ayarlarından "Bilinmeyen kaynaklara izin ver" seçmen gerekir.</p>
-    <p><strong>Yeni oyunlar eklenecek mi?</strong><br>Evet, yakında güncellemelerle yeni içerikler gelecek!</p>
-  </section>
-  <section class="card">
-    <h2>📩 Geri Bildirim</h2>
-    <p>Uygulama ile ilgili öneri veya hata bildirimi yapmak istersen benimle iletişime geçebilirsin.</p>
-    <a href="mailto:tprkcreator@gmail.com" class="button">📧 Mail Gönder</a>
-  </section>
   <script>
     fetch('data.json')
       .then(res => res.json())
@@ -78,17 +90,7 @@
       .catch(() => {
         document.getElementById('version').innerText = 'Veri alınamadı';
       });
-    <section class="card">
-  <h2>🗣 Kullanıcı Yorumları</h2>
-  <p><strong>Toprak E..</strong>: "2048 oyunu süper çalışıyor!"</p>
-  <p><strong>Özgür K.</strong>: "Tasarım sade, uygulama hafif. Eline sağlık!"</p>
-</section>
   </script>
-    <footer style="margin-top:40px; text-align:center;">
-    <a href="admin.html" style="color:#555; font-size:12px;">Admin</a>
-
-
-    </footer>
 
 </body>
 </html>
