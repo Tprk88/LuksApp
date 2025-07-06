@@ -19,25 +19,7 @@
 
   <div class="container">
     <h1>📱 LuksApp - Son Güncellemeler</h1>
-      <section class="card">
-  <h2>🧪 Sürüm Kontrolü</h2>
-  <button onclick="checkVersion()">Güncel mi kontrol et</button>
-  <p id="versionStatus"></p>
-
-  <script>
-    function checkVersion() {
-      fetch('data.json')
-        .then(res => res.json())
-        .then(data => {
-          const latest = data.version;
-          const current = "1.1"; // cihazdaki sürüm
-          if (latest === current) {
-            document.getElementById("versionStatus").textContent = "✅ Güncel!";
-          } else {
-            document.getElementById("versionStatus").textContent = "🔁 Güncelleme var!";
-          }
-        });
-    }
+ 
   </script>
 
     <div class="card">
