@@ -1,6 +1,6 @@
 {
-  "version": "1.4",
-  "min_required": "1.4",
+  "version": "1.5",
+  "min_required": "1.5",
   "changelog": [
     "Zorunlu güncelleme özelliği getirildi"
   ],
