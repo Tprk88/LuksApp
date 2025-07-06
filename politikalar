@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuksApp - Şartlar ve Politikalar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #1e88e5;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .divider {
+      border-top: 2px solid #ccc;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>LuksApp - Kullanım Şartları ve Politikaları</h1>
+
+  <section>
+    <h2>Gizlilik Politikası</h2>
+    <p>LuksApp, kullanıcı deneyimini geliştirmek amacıyla bazı veriler toplayabilir ve bu verileri analiz etmek ya da hizmet kalitesini artırmak için üçüncü taraflarla paylaşabilir.</p>
+    <ul>
+      <li><strong>Toplanan Veriler:</strong> Cihaz bilgileri, IP adresi, kullanım alışkanlıkları</li>
+      <li><strong>Veri Paylaşımı:</strong> Reklam sağlayıcılar, analiz servisleri</li>
+      <li><strong>Reklamlar ve Analiz:</strong> Google AdMob, Firebase Analytics</li>
+      <li><strong>Çerezler:</strong> Cihaz üzerinde kullanılabilir</li>
+      <li><strong>Güncellemeler:</strong> Değişiklikler bu sayfada yayınlanır</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Kullanım Şartları</h2>
+    <ul>
+      <li>Uygulama internet bağlantısı gerektirebilir</li>
+      <li>Veri toplanabilir ve analiz edilebilir</li>
+      <li>Üçüncü taraf servislerle çalışabilir</li>
+      <li>İçerikler değiştirilebilir, oyunlar eklenip çıkarılabilir</li>
+      <li>Yasal olmayan kullanım yasaktır</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Açık Rıza Metni</h2>
+    <p>Bu uygulamayı indirip kullandığınızda; verilerinizin toplanabileceğini, analiz edilebileceğini ve üçüncü taraflarla paylaşılabileceğini kabul etmiş sayılırsınız.</p>
+  </section>
+
+  <section>
+    <h2>Yasal Uyarı</h2>
+    <p>LuksApp, eğlence amaçlıdır. Kullanıcı, uygulamayı kendi sorumluluğunda kullanır. Geliştirici hiçbir doğrudan veya dolaylı zarardan sorumlu değildir.</p>
+  </section>
+
+  <section>
+    <h2>Fikri Mülkiyet Hakları</h2>
+    <p>Tüm içerikler (kodlar, görseller, sesler) Tprk88'e aittir. İzinsiz çoğaltılamaz veya dağıtılamaz.</p>
+  </section>
+
+  <section>
+    <h2>Çocuklara Yönelik Politika</h2>
+    <p>Uygulama 13 yaş altı bireyleri hedeflemez. Ebeveyn gözetimi önerilir. Zararlı içerik barındırmaz.</p>
+  </section>
+
+  <section>
+    <h2>Üçüncü Taraf Bağlantılar</h2>
+    <p>Uygulama, harici sitelere yönlendirme yapabilir. Bu sitelerin içeriğinden geliştirici sorumlu değildir.</p>
+  </section>
+
+  <section>
+    <h2>Reklam Politikası</h2>
+    <p>Google AdMob veya benzeri servisler üzerinden reklam gösterilebilir. Reklam gösteriminde bazı veriler paylaşılabilir.</p>
+  </section>
+
+  <section>
+    <h2>Hizmetin Askıya Alınması</h2>
+    <p>Geliştirici, önceden haber vermeden bazı hizmetleri durdurma hakkını saklı tutar.</p>
+  </section>
+
+  <section>
+    <h2>Kullanım Koşullarında Değişiklik</h2>
+    <p>Şartlar ve politikalar zamanla değiştirilebilir. Güncellemeler bu sayfadan duyurulur.</p>
+  </section>
+
+  <section>
+    <h2>Sorumluluk Reddi</h2>
+    <p>Uygulamanın hatasız çalışması garanti edilmez. Kullanıcı, uygulamayı olduğu gibi kullanmayı kabul eder.</p>
+  </section>
+
+  <section>
+    <h2>Veri Saklama Süresi</h2>
+    <p>Veriler yalnızca gerektiği sürece saklanır. İstek halinde silinebilir.</p>
+  </section>
+
+  <section>
+    <h2>Yargı Yetkisi</h2>
+    <p>Tüm hukuki anlaşmazlıklarda İstanbul Mahkemeleri yetkilidir. Türk yasaları geçerlidir.</p>
+  </section>
+</body>
+</html>
