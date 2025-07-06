@@ -1,0 +1,10 @@
+{
+  "version": "1.1",
+  "changelog": [
+    "Yeni arayüz eklendi",
+    "Snake, 2048 ve TicTacToe oyunları optimize edildi",
+    "Hata raporlama özelliği aktif edildi",
+    "Karanlık tema varsayılan hale getirildi"
+  ],
+  "apk": "https://example.com/luksapp.apk"
+}
